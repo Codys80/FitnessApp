@@ -1,16 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="gym_background.png"
              x:Class="FitnessApp.MainPage">
-
-    <ScrollView>
+    <ScrollView >
+        <!--FIRST PAGE-->
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            <Label 
+                Text="Chose your coach"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
 
+            <Border
+                 Stroke="#00FF00"
+                 StrokeThickness="2"
+                 BackgroundColor="#99000000"
 
-            
+                 Margin="0,0,0,0">
+                <Grid>
+                    <Image Source="gym_background.png" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label      Grid.Column="0" Grid.Row="0"
+                                Text="Coach 1"
+                                FontSize="32"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Start" />
+                    <Label      Grid.Column="0" Grid.Row="1"
+                                Text="Expert in weight loss and nutrition."
+                                FontSize="16"
+                                HorizontalOptions="Start" />
+                    <Button 
+                            Grid.Column="1" Grid.RowSpan="2"
+                            Text=">"
+                            FontSize="18"
+                            BackgroundColor="#20000000"
+                            TextColor="White"
+                            HorizontalOptions="EndAndExpand" 
+                            >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
