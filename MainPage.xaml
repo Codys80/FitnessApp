@@ -14,6 +14,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center" />
 
+                <!--First button-->
             <Border
                  Stroke="#00FF00"
                  StrokeThickness="2"
@@ -21,7 +22,7 @@
 
                  Margin="0,0,0,0">
                 <Grid>
-                    <Image Source="gym_background.png" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <Image Source="coach_1.jpg" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2" Opacity="0.7" BackgroundColor="Black"/>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
                         <ColumnDefinition />
@@ -30,29 +31,181 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label      Grid.Column="0" Grid.Row="0"
-                                Text="Coach 1"
-                                FontSize="32"
-                                FontAttributes="Bold"
-                                HorizontalOptions="Start" />
-                    <Label      Grid.Column="0" Grid.Row="1"
-                                Text="Expert in weight loss and nutrition."
-                                FontSize="16"
-                                HorizontalOptions="Start" />
+                    <Label
+                        Grid.Column="0" Grid.Row="0"
+                        Text="Slim seeker 😎"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Start" />
+                    <Label
+                        Grid.Column="0" Grid.Row="1"
+                        Text="Achieve slimmer look."
+                        FontSize="16"
+                        HorizontalOptions="Start" />
                     <Button 
-                            Grid.Column="1" Grid.RowSpan="2"
-                            Text=">"
-                            FontSize="18"
-                            BackgroundColor="#20000000"
-                            TextColor="White"
-                            HorizontalOptions="EndAndExpand" 
-                            >
+                        x:Name="btnSelectCoachOne"
+                        x:Uid="1"
+                        Clicked="CoachSelected"
+                        Grid.Column="1" Grid.RowSpan="2"
+                        Text=">"
+                        ClassId="1"
+                        FontSize="18"
+                        BackgroundColor="#20000000"
+                        TextColor="White"
+                        HorizontalOptions="EndAndExpand" 
+                    >
                     </Button>
                 </Grid>
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="12"/>
                 </Border.StrokeShape>
             </Border>
+                <!--end of button-->
+
+            <!--Second button-->
+            <Border
+                 Stroke="#00FF00"
+                 StrokeThickness="2"
+                 BackgroundColor="#99000000"
+
+                 Margin="0,0,0,0">
+                <Grid>
+                    <Image Source="coach_2.jpg" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2" Opacity="0.7" BackgroundColor="Black"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Column="0" Grid.Row="0"
+                        Text="Lean machine 🤗"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Start" />
+                    <Label
+                        Grid.Column="0" Grid.Row="1"
+                        Text="Become leaner and reduce body fat."
+                        FontSize="16"
+                        HorizontalOptions="Start" />
+                    <Button 
+                        x:Name="btnSelectCoachTwo"
+                        x:Uid="2"
+                        Clicked="CoachSelected"
+                        Grid.Column="1" Grid.RowSpan="2"
+                        Text=">"
+                        ClassId="2"
+                        FontSize="18"
+                        BackgroundColor="#20000000"
+                        TextColor="White"
+                        HorizontalOptions="EndAndExpand" 
+                    >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of button-->
+
+            <!--Third button-->
+            <Border
+                 Stroke="#00FF00"
+                 StrokeThickness="2"
+                 BackgroundColor="#99000000"
+
+                 Margin="0,0,0,0">
+                <Grid>
+                    <Image Source="coach_3.jpg" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2" Opacity="0.7" BackgroundColor="Black"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Column="0" Grid.Row="0"
+                        Text="Muscle Maverick 🍶"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Start" />
+                    <Label
+                        Grid.Column="0" Grid.Row="1"
+                        Text="Increase muscle mass and tone up."
+                        FontSize="16"
+                        HorizontalOptions="Start" />
+                    <Button 
+                        x:Name="btnSelectCoachThree"
+                        x:Uid="3"
+                        Clicked="CoachSelected"
+                        Grid.Column="1" Grid.RowSpan="2"
+                        Text=">"
+                        ClassId="3"
+                        FontSize="18"
+                        BackgroundColor="#20000000"
+                        TextColor="White"
+                        HorizontalOptions="EndAndExpand" 
+                    >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of button-->
+
+            <!--Fourth button
+            <Border
+                 Stroke="#00FF00"
+                 StrokeThickness="2"
+                 BackgroundColor="#99000000"
+
+                 Margin="0,0,0,0">
+                <Grid>
+                    <Image Source="coach_4.jpg" Aspect="Fill"  MaximumHeightRequest="100" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Column="0" Grid.Row="0"
+                        Text="Build your own coach"
+                        FontSize="32"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Start" />
+                    <Label
+                        Grid.Column="0" Grid.Row="1"
+                        Text="To be created."
+                        FontSize="16"
+                        HorizontalOptions="Start" />
+                    <Button 
+                        x:Name="btnSelectCoachFour"
+                        x:Uid="4"
+                        Clicked="CoachSelected"
+                        Grid.Column="1" Grid.RowSpan="2"
+                        Text=">"
+                        ClassId="4"
+                        FontSize="18"
+                        BackgroundColor="#20000000"
+                        TextColor="White"
+                        HorizontalOptions="EndAndExpand" 
+                    >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            end of button-->
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
