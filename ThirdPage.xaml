@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessApp.ThirdPage"
+             BackgroundColor="White"
+             >
+    <VerticalStackLayout>
+        <Grid
+             Margin="10"
+>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Border
+                 Grid.Column="0" Grid.Row="0"
+                 StrokeThickness="1"
+                 Stroke="LightGray"
+                 BackgroundColor="LightGray"
+                 HorizontalOptions="Start"
+                 >
+                        <Button 
+                Grid.Column="0" Grid.Row="0"
+                x:Name="ActionButton2"
+                Text="⬇️"
+                TextColor="White"
+                CornerRadius="18"
+                HorizontalOptions="Start"
+                BackgroundColor="LightGray"
+                Clicked="PageBack" />
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30"/>
+                </Border.StrokeShape>
+            </Border>
+
+            <Label 
+                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                x:Name="Header"
+                TextColor="Black"
+                Text="Workout plan 😁"
+                HorizontalOptions="Fill"
+                FontSize="18"
+                />
+            
+        </Grid>
+        <!--First button
+        <Border
+         Stroke="#F5F5F5"
+         StrokeThickness="1"
+         BackgroundColor="#F5F5F5"
+         Margin="10">
+            <Grid
+                BackgroundColor="#F5F5F5"
+                Margin="10"
+        >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.ColumnSpan="3" Grid.Row="0"
+                    Text="ℹ️ Plan overview"
+                    TextColor="Black"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+                <Label
+                    Grid.ColumnSpan="3" Grid.Row="1"
+                    Text="This is begginer friendly balls"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                
+
+            </Grid>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="12"/>
+            </Border.StrokeShape>
+        </Border>
+
+        end of button-->
+        <!--Second button
+        <Border
+             Stroke="#E5D8FB"
+             StrokeThickness="1"
+             BackgroundColor="#E5D8FB"
+             Margin="10">
+            <Grid
+                    BackgroundColor="#E5D8FB"
+                    Margin="10"
+                    >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label
+                    Margin="5"
+                     Grid.Row="0" Grid.ColumnSpan="3"
+                    Text="My muscule builder plan"
+                    FontSize="24"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+                <Label
+                    Margin="5"
+                     Grid.Row="1" Grid.ColumnSpan="3"
+                    Text="By AI coach Muscle Maverick"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                <Label
+                    Margin="5"
+                     Grid.Row="2" Grid.ColumnSpan="3"
+                    Text="Intermediate, Gym, 3 Workouts"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                <Label
+                     Grid.Row="3" Grid.ColumnSpan="3"
+                    Text="🚶‍♂️‍➡️ Medium fitness level"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                <Label
+                     Grid.Row="4" Grid.ColumnSpan="3"
+                    Text="🕑 Workouts approx 45min"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                <Label
+                     Grid.Row="5" Grid.ColumnSpan="3"
+                    Text="📆 Created: 31 Oct 2024"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                <Button 
+                    x:Name="btnSelectPlan"
+                    x:Uid="2"
+                    Grid.Column="4" Grid.RowSpan="7"
+                    Text=">"
+                    ClassId="2"
+                    FontSize="26"
+                    BackgroundColor="#20000000"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" 
+                    Clicked="PageUp"
+        >
+                </Button>
+            </Grid>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="12"/>
+            </Border.StrokeShape>
+        </Border>
+        end of button-->
+
+        <!--Third button
+        <Border
+         Stroke="#E5D8FB"
+         StrokeThickness="1"
+         BackgroundColor="#E5D8FB"
+         Margin="10">
+            <Grid
+                BackgroundColor="#E5D8FB"
+                Margin="10"
+        >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label
+                    Margin="5"
+                     Grid.Row="0" Grid.ColumnSpan="3"
+                    Text="My weight loss plan"
+                    FontSize="24"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+                <Label
+                Margin="5"
+                 Grid.Row="1" Grid.ColumnSpan="3"
+                Text="By AI coach Slim Seeker"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Start" />
+                <Label
+                Margin="5"
+                 Grid.Row="2" Grid.ColumnSpan="3"
+                Text="Begginer, Gym and home, 3 Workouts"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Start" />
+                <Label
+                 Grid.Row="3" Grid.ColumnSpan="3"
+                Text="🚶‍♂️‍➡️ Low fitness level"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Start" />
+                <Label
+                 Grid.Row="4" Grid.ColumnSpan="3"
+                Text="🕑 Workouts approx 60min"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Start" />
+                <Label
+                 Grid.Row="5" Grid.ColumnSpan="3"
+                Text="📆 Created: 31 Oct 2024"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Start" />
+                <Button 
+                    x:Name="btnSelectPlan2"
+                    x:Uid="3"
+                    Grid.Column="4" Grid.RowSpan="7"
+                    Text=">"
+                    ClassId="3"
+                    FontSize="26"
+                    BackgroundColor="#20000000"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" 
+                    Clicked="PageUp"
+        >
+                </Button>
+            </Grid>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="12"/>
+            </Border.StrokeShape>
+        </Border>
+        end of button-->
+
+    </VerticalStackLayout>
+</ContentPage>

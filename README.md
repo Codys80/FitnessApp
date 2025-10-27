@@ -71,3 +71,11 @@ Część wizualna (UI / UX)
     * po kliknięciu w „Mark As Complete” zmienia się kolor i zapisuje stan. 
   - Dodawanie i usuwanie serii: 
   * dynamiczne dodawanie nowych wierszy. 
+   
+  # Wystarczy stworzyć wszystko na sztywno tak jak jest na zdjęciach. Np.. Wybierając slimseeker przenosi nas na 2 ekran, który dla każdego trenera wygląda tak samo. Każdy plan ma w sobie to samo i przenosi nas na kolejny ekran, który dla każdego planu jest identyczny. 
+
+ 
+
+ 
+
+ 

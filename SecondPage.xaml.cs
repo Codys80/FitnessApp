@@ -9,10 +9,16 @@ public partial class SecondPage : ContentPage
         //await Navigation.PushAsync(new MainPage());
         Header.Text = selectedCoachIndex.ToString();
     }
-    async void OnActionClicked2(object sender, EventArgs e)
+    async void PageBack(object sender, EventArgs e)
     {
 
         await Navigation.PushAsync(new MainPage());
+
+    }
+    async void PageUp(object sender, EventArgs e)
+    {
+
+        await Navigation.PushAsync(new ThirdPage());
 
     }
     public SecondPage(int index)
@@ -20,4 +26,8 @@ public partial class SecondPage : ContentPage
         selectedCoachIndex = index;
         InitializeComponent();
 	}
+    public SecondPage()
+    {
+        InitializeComponent();
+    }
 }
