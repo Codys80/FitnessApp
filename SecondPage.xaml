@@ -4,6 +4,7 @@
              x:Class="FitnessApp.SecondPage"
              BackgroundColor="White"
                 >
+    <ScrollView>
     <VerticalStackLayout>
         <Grid
             Margin="10"
@@ -16,8 +17,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            
-            <Border
+                <!--Nav -->
+                <Border
                  Grid.Column="0" Grid.Row="0"
                  StrokeThickness="1"
                  Stroke="LightGray"
@@ -398,4 +399,5 @@
         </Border>
         <!--end of button-->
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage> 

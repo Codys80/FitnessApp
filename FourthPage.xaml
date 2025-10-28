@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessApp.FourthPage"             
+             BackgroundColor="White"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--Nav -->
+            <Grid
+             Margin="10"
+>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border
+                 Grid.Column="0" Grid.Row="0"
+                 StrokeThickness="1"
+                 Stroke="LightGray"
+                 BackgroundColor="LightGray"
+                 HorizontalOptions="Start"
+                 >
+                    <Button 
+                Grid.Column="0" Grid.Row="0"
+                x:Name="ActionButton2"
+                Text="⬇️"
+                TextColor="White"
+                CornerRadius="18"
+                HorizontalOptions="Start"
+                BackgroundColor="LightGray"
+                Clicked="PageBack" />
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                </Border>
+
+                <Label 
+                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                x:Name="Header"
+                TextColor="Black"
+                Text="Workout plan 😁"
+                HorizontalOptions="Fill"
+                FontSize="18"
+                />
+
+            </Grid>
+            <!--Plan overwiev label-->
+            <Border
+         Stroke="#F5F5F5"
+         StrokeThickness="1"
+         BackgroundColor="#F5F5F5"
+         Margin="10">
+                <Grid
+                BackgroundColor="#F5F5F5"
+                Margin="10"
+        >
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                    Grid.ColumnSpan="3" Grid.Row="0"
+                    Text="ℹ️ Plan overview"
+                    TextColor="Black"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+                    <Label
+                    Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" Grid.RowSpan="1"
+                    Text="This beginner-friendly workout plan aims to help you lose weight by incorporating a mix of gym and home exercises. Focusing on a full-body approach, the plan encourages steady fat burning and increases your overall fitness level"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+
+
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+
+            <!--end of label-->
+            <!--First button-->
+            <Border
+             Stroke="#E5D8FB"
+             StrokeThickness="1"
+             BackgroundColor="#E5D8FB"
+             Margin="10">
+                <Grid
+                    BackgroundColor="#E5D8FB"
+                    Margin="10"
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                    Margin="5"
+                     Grid.Row="0" Grid.ColumnSpan="3"
+                    Text="Skipping rope"
+                    FontSize="24"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+
+                    <HorizontalStackLayout  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="StartAndExpand">
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="1 set"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="1 reps"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="LightGreen"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="10 minutes"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                    </HorizontalStackLayout>
+                    <Label
+                    Margin="5"
+                     Grid.Row="2" Grid.ColumnSpan="3"
+                    Text="🎯 Target: Cardiovascular system"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Label
+                   Margin="5"
+                    Grid.Row="3" Grid.ColumnSpan="3"
+                   Text="Equioment: Skipping rope"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+                    <Label
+                     Grid.Row="4" Grid.ColumnSpan="3"
+                    Text="Tap to see guidiance"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Button 
+                    x:Name="BtnFirst"
+                    x:Uid="2"
+                    Grid.Column="4" Grid.RowSpan="7"
+                    Text=">"
+                    ClassId="2"
+                    FontSize="26"
+                    BackgroundColor="#20000000"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" 
+                    Clicked="PageUp"
+        >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of button-->
+
+
+            <!--Second button-->
+            <Border
+             Stroke="#E5D8FB"
+             StrokeThickness="1"
+             BackgroundColor="#E5D8FB"
+             Margin="10">
+                <Grid
+                    BackgroundColor="#E5D8FB"
+                    Margin="10"
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                    Margin="5"
+                     Grid.Row="0" Grid.ColumnSpan="3"
+                    Text="Push-ups"
+                    FontSize="24"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+
+                    <HorizontalStackLayout  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="StartAndExpand">
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="3 sets"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="8-12 reps"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="LightGreen"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="10 minutes"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                    </HorizontalStackLayout>
+                    <Label
+                    Margin="5"
+                     Grid.Row="2" Grid.ColumnSpan="3"
+                    Text="🎯 Target: Chest, triceps"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Label
+                   Margin="5"
+                    Grid.Row="3" Grid.ColumnSpan="3"
+                   Text="Equioment: Skipping rope"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+                    <Label
+                     Grid.Row="4" Grid.ColumnSpan="3"
+                    Text="Tap to see guidiance"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Button 
+                    x:Name="BtnSecond"
+                    x:Uid="2"
+                    Grid.Column="4" Grid.RowSpan="7"
+                    Text=">"
+                    ClassId="2"
+                    FontSize="26"
+                    BackgroundColor="#20000000"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" 
+                    Clicked="PageUp"
+        >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of button-->
+
+
+
+            <!--Third button-->
+            <Border
+             Stroke="#E5D8FB"
+             StrokeThickness="1"
+             BackgroundColor="#E5D8FB"
+             Margin="10">
+                <Grid
+                    BackgroundColor="#E5D8FB"
+                    Margin="10"
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                    Margin="5"
+                     Grid.Row="0" Grid.ColumnSpan="3"
+                    Text="Lunges"
+                    FontSize="24"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start" />
+
+                    <HorizontalStackLayout  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="StartAndExpand">
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="3 sets"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Purple"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="12 each leg reps"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="LightGreen"
+                      Margin="1">
+                            <Label
+                         Margin="5"
+
+                         Text="10 minutes"
+                         FontSize="9"
+                         TextColor="White"
+                         HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                    </HorizontalStackLayout>
+                    <Label
+                    Margin="5"
+                     Grid.Row="2" Grid.ColumnSpan="3"
+                    Text="🎯 Target: Cardiovascular system"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Label
+                   Margin="5"
+                    Grid.Row="3" Grid.ColumnSpan="3"
+                   Text="Equioment: Skipping rope"
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Start" />
+                    <Label
+                     Grid.Row="4" Grid.ColumnSpan="3"
+                    Text="Tap to see guidiance"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Start" />
+                    <Button 
+                    x:Name="BtnThird"
+                    x:Uid="2"
+                    Grid.Column="4" Grid.RowSpan="7"
+                    Text=">"
+                    ClassId="2"
+                    FontSize="26"
+                    BackgroundColor="#20000000"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand" 
+                    Clicked="PageUp"
+        >
+                    </Button>
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of button-->
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

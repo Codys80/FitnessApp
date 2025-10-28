@@ -11,7 +11,7 @@ public partial class ThirdPage : ContentPage
     async void PageUp(object sender, EventArgs e)
     {
 
-        await Navigation.PushAsync(new MainPage());
+        await Navigation.PushAsync(new FourthPage());
 
     }
     public ThirdPage()
