@@ -40,11 +40,11 @@
             </Border>
 
             <Label 
-                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
                 x:Name="Header"
                 TextColor="Black"
                 Text="My workout plans 😁"
-                HorizontalOptions="Fill"
+                HorizontalOptions="Center"
                 FontSize="18"
                 />
             <!--NextPage button
@@ -69,8 +69,27 @@
                 </Border.StrokeShape>
             </Border>
         End of button-->
-        </Grid>
-        <!--First button-->
+            </Grid>
+
+                <Border 
+                 Stroke="Purple"
+                 StrokeThickness="0"
+                 BackgroundColor="Purple"
+
+                    HorizontalOptions="Center"
+                 Margin="1">
+                    <Label
+                    Margin="5"
+                    Text="💫 Unlimited plans"
+                    FontSize="9"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="24"/>
+                    </Border.StrokeShape>
+                </Border>
+                <!--First button-->
         <Border
          Stroke="#DEF6EB"
          StrokeThickness="1"

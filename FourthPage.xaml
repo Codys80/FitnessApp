@@ -41,56 +41,78 @@
                 </Border>
 
                 <Label 
-                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
                 x:Name="Header"
                 TextColor="Black"
-                Text="Workout plan 😁"
-                HorizontalOptions="Fill"
+                Text="Workout"
+                HorizontalOptions="Center"
                 FontSize="18"
                 />
 
             </Grid>
             <!--Plan overwiev label-->
-            <Border
-         Stroke="#F5F5F5"
-         StrokeThickness="1"
-         BackgroundColor="#F5F5F5"
-         Margin="10">
-                <Grid
-                BackgroundColor="#F5F5F5"
+
+            <Grid
+                
                 Margin="10"
         >
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Label
-                    Grid.ColumnSpan="3" Grid.Row="0"
-                    Text="ℹ️ Plan overview"
-                    TextColor="Black"
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Column="0" Grid.Row="0"
+                    Text="At-home Circut"
+                    TextColor="LightGreen"
                     FontSize="28"
-                    FontAttributes="Bold"
-                    HorizontalOptions="Start" />
-                    <Label
-                    Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" Grid.RowSpan="1"
-                    Text="This beginner-friendly workout plan aims to help you lose weight by incorporating a mix of gym and home exercises. Focusing on a full-body approach, the plan encourages steady fat burning and increases your overall fitness level"
-                    TextColor="Black"
-                    HorizontalOptions="Start" />
+                    HorizontalOptions="CenterAndExpand" />
+                <Label
+                    Grid.Column="0" Grid.Row="1"
+                    Text="🎯 Targets Full body"
+                    TextColor="black"
+                    FontSize="28"
+                    HorizontalOptions="CenterAndExpand" />
+                <Label
+                    Grid.Column="0" Grid.Row="2"
+                    Text="🕑 60 minutes"
+                    TextColor="black"
+                    FontSize="28"
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Label
+                    Grid.Column="0" Grid.Row="3"
+                    Text="⭐ You havent done this yet!"
+                    TextColor="black"
+                    FontSize="18"
+                    HorizontalOptions="CenterAndExpand" />
+                <Border
+                     Grid.Column="0" Grid.Row="4"
+                     Stroke="#E5D8FB"
+                     StrokeThickness="0"
+                     BackgroundColor="#E5D8FB"
+                     Margin="10">
+                    
+                    <Button
+                        Grid.Column="0" Grid.Row="4"
+                        BackgroundColor="LightGreen"
+                        TextColor="white"
+                        Text="▶️ Start workout"
+                        Clicked="PageUp"
+                    />
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="14"/>
+                    </Border.StrokeShape>
+                </Border>
 
 
-                </Grid>
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="12"/>
-                </Border.StrokeShape>
-            </Border>
+            </Grid>
 
             <!--end of label-->
             <!--First button-->

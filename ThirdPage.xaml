@@ -41,11 +41,11 @@
             </Border>
 
             <Label 
-                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
                 x:Name="Header"
                 TextColor="Black"
                 Text="Workout plan 😁"
-                HorizontalOptions="Fill"
+                HorizontalOptions="Center"  
                 FontSize="18"
                 />
             
@@ -91,8 +91,16 @@
                 <RoundRectangle CornerRadius="12"/>
             </Border.StrokeShape>
         </Border>
+            <Label 
+                Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"
+                x:Name="Header2"
+                TextColor="Black"
+                Text="Select workout"
+                HorizontalOptions="Fill"
+                FontSize="18"
+                />
 
-        <!--end of label-->
+            <!--end of label-->
         <!--First button-->
         <Border
              Stroke="#E5D8FB"

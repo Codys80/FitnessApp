@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessApp.FifthPage"
+             BackgroundColor="White"
+             >
+    <ScrollView>
+    <VerticalStackLayout>
+            <!--Nav -->
+            <Grid
+             Margin="10"
+>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border
+                 Grid.Column="0" Grid.Row="0"
+                 StrokeThickness="1"
+                 Stroke="LightGray"
+                 BackgroundColor="LightGray"
+                 HorizontalOptions="Start"
+                 >
+                    <Button 
+                Grid.Column="0" Grid.Row="0"
+                x:Name="ActionButton2"
+                Text="⬇️"
+                TextColor="White"
+                CornerRadius="18"
+                HorizontalOptions="Start"
+                BackgroundColor="LightGray"
+                Clicked="PageBack" />
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                </Border>
+
+                <Label 
+                Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
+                x:Name="Header"
+                TextColor="Black"
+                Text="Working out"
+                HorizontalOptions="Center"
+                FontSize="18"
+                />
+
+                <Border
+                 Grid.Column="2" Grid.Row="0"
+                 StrokeThickness="1"
+                 Stroke="LightGreen"
+                 BackgroundColor="LightGreen"
+                 HorizontalOptions="EndAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                 >
+                    <Label 
+                Grid.Column="2" Grid.Row="0"
+                x:Name="TimeDisplay"
+                Padding="3"
+                TextColor="White"
+                Text="00:01:13"
+                HorizontalOptions="EndAndExpand"
+                FontSize="12"
+                VerticalOptions="CenterAndExpand"
+                />
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                </Border>
+            </Grid>
+            <!--end of Nav -->
+              
+            <!--First label-->
+            <Border
+             Stroke="LightGray"
+             StrokeThickness="0"
+             BackgroundColor="#EDEDED"
+             Margin="10">
+                <Grid
+                    BackgroundColor="#EDEDED"
+                    Margin="10"
+            >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                        <Label 
+                        MaximumWidthRequest="30"
+                        Margin="5"
+                        Grid.Row="0" Grid.Column="0" 
+                        Text="✅"
+                        FontSize="18"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        HorizontalOptions="StartAndExpand" />
+                    <VerticalStackLayout  HorizontalOptions="Center"                     
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+                        <Label
+                        Margin="5"
+                        Text="Elliptical Machine"
+                        FontSize="18"
+                        TextColor="Black"
+                        HorizontalOptions="End" />
+                        <Label
+                        Margin="5"
+                        Text="ℹ️ Tap to Re-Open"
+                        FontSize="8"
+                        TextColor="Black"
+                        HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+
+                    <Label
+                       Margin="5"
+                       Grid.Row="0" Grid.Column="2" 
+                       Text="⬇️"
+                       FontSize="18"
+                       TextColor="Black"
+                       HorizontalOptions="End" />
+
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of label -->            
+            <!--Second label-->
+            <Border
+             Stroke="LightGray"
+             StrokeThickness="0"
+             BackgroundColor="#EDEDED"
+             Margin="10">
+                <Grid
+                    BackgroundColor="#EDEDED"
+                    Margin="10"
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1"
+                        Margin="5"
+                        Text="Leg Press"
+                        FontSize="18"
+                        TextColor="Black"
+                        HorizontalOptions="StartAndExpand" />
+                    <Label
+                        Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1"
+                        Margin="5"
+                        Text="✔️"
+                        FontSize="18"
+                        TextColor="Black"
+                        HorizontalOptions="EndAndExpand" />
+                    <HorizontalStackLayout  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="StartAndExpand" Spacing="10">
+                        <Border
+                          Stroke="Purple"
+                          StrokeThickness="0"
+                          BackgroundColor="DimGray"
+                          Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="Legs"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                          Stroke="Purple"
+                          StrokeThickness="0"
+                          BackgroundColor="MediumPurple"
+                          Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="3 sets"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                        <Border
+                              Stroke="Purple"
+                              StrokeThickness="0"
+                              BackgroundColor="MediumPurple"
+                              Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="10-12 Reps"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                        <Border
+                          Stroke="Purple"
+                          StrokeThickness="0"
+                          BackgroundColor="LightGreen"
+                          Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="10 mins"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="StartAndExpand" Spacing="10">
+                        <Border
+                          Stroke="Purple"
+                          StrokeThickness="0"
+                          BackgroundColor="LightBlue"
+                          Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="Legs press machine"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                          Stroke="Purple"
+                          StrokeThickness="0"
+                          BackgroundColor="LightBlue"
+                          Margin="1">
+                            <Label
+                             Margin="5"
+                             Text="30kg"
+                             FontSize="9"
+                             TextColor="White"
+                             HorizontalOptions="Start" />
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="24"/>
+                            </Border.StrokeShape>
+                        </Border>
+                    </HorizontalStackLayout>
+                    <Border  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                        Stroke="LightBlue"
+                        StrokeThickness="1"
+                        Margin="1">
+                        <Label
+                           Margin="5"
+                           Text="? Excercise help"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#60A5F9"
+                           HorizontalOptions="CenterAndExpand"
+                           />
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="14"/>
+                        </Border.StrokeShape>
+                    </Border>
+
+
+                    <Label 
+                        Grid.Row="4" Grid.Column="0" 
+                        TextColor="Black"
+                        Text="Set 1"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalTextAlignment="Center"
+                        FontSize="18"
+                        />
+                    <Button
+                        BorderColor="Red"
+                        BorderWidth="1"
+                        Grid.Row="4" Grid.Column="1" 
+                        TextColor="Red"
+                        BackgroundColor="#EDEDED"
+                        Text="🗑️"
+                        HorizontalOptions="EndAndExpand"
+                        FontSize="8"
+                    />
+                </Grid>
+                <!--Set reps -->
+                    <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                        BackgroundColor="White"
+                        Margin="10"
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        
+                        <Border
+                            Grid.Row="0" Grid.Column="0" 
+                            StrokeThickness="0"
+                            BackgroundColor="White"
+                            Margin="10">
+                            <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1">
+                            <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <Label 
+                            MaximumWidthRequest="30"
+                            Margin="5"
+                            Grid.Row="0" Grid.Column="0" 
+                            Text="-"
+                            FontSize="18"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HorizontalOptions="StartAndExpand" />
+                            
+                            <VerticalStackLayout  HorizontalOptions="Center"                     
+                            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Label
+                                    Margin="5"
+                                    Text="30"
+                                    FontSize="18"
+                                    TextColor="Black"
+                                    HorizontalOptions="End" />
+                                <Label
+                                    Margin="5"
+                                    Text="Weight"
+                                    FontSize="8"
+                                    TextColor="Black"
+                                    HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+
+                           <Label
+                           Margin="5"
+                           Grid.Row="0" Grid.Column="2" 
+                           Text="+"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalOptions="End" />
+
+                        </Grid>
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="14"/>
+                        </Border.StrokeShape>
+                        </Border>
+
+                        <Border
+                            Grid.Row="0" Grid.Column="1" 
+                            StrokeThickness="0"
+                            BackgroundColor="White"
+                            Margin="10">
+                            <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <Label 
+                                MaximumWidthRequest="30"
+                                Margin="5"
+                                Grid.Row="0" Grid.Column="0" 
+                                Text="-"
+                                FontSize="18"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                HorizontalOptions="StartAndExpand" />
+
+                                <VerticalStackLayout  HorizontalOptions="Center"                     
+                                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+                                    <Label
+                                    Margin="5"
+                                    Text="8"
+                                    FontSize="18"
+                                    TextColor="Black"
+                                    HorizontalOptions="End" />
+                                    <Label
+                                    Margin="5"
+                                    Text="Reps"
+                                    FontSize="8"
+                                    TextColor="Black"
+                                    HorizontalOptions="Center" />
+                                </VerticalStackLayout>
+
+                                <Label
+                               Margin="5"
+                               Grid.Row="0" Grid.Column="2" 
+                               Text="+"
+                               FontSize="18"
+                               TextColor="Black"
+                               HorizontalOptions="End" />
+                                <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="14"/>
+                                </Border.StrokeShape>
+                                </Border>
+                            </Grid>
+
+                            <!-- -->
+                            <Border  Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
+                                Stroke="Black"
+                                StrokeThickness="1"
+                                >
+                                <Label
+                                   Margin="5"
+                                   Text="Add Set"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalOptions="CenterAndExpand"
+                                   />
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="14"/>
+                                </Border.StrokeShape>
+                            </Border>
+
+                    <Border  Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"
+                                Stroke="LightGreen"
+                                StrokeThickness="1"
+                                >
+                        <Label
+                                   Margin="5"
+                                   Text="? Mark as complete"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="LightGreen"
+                                   HorizontalOptions="CenterAndExpand"
+                                   />
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="14"/>
+                        </Border.StrokeShape>
+                    </Border>      
+                </Grid>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+            </Border>
+            <!--end of label-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
