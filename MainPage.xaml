@@ -158,7 +158,7 @@
             </Border>
             <!--end of button-->
 
-            <!--Fourth button
+            <!--Fourth button -->
             <Border
                  Stroke="#00FF00"
                  StrokeThickness="2"
@@ -204,7 +204,7 @@
                     <RoundRectangle CornerRadius="12"/>
                 </Border.StrokeShape>
             </Border>
-            end of button-->
+            <!--end of button-->
 
         </VerticalStackLayout>
     </ScrollView>

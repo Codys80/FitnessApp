@@ -50,7 +50,44 @@
                 />
             
         </Grid>
-        <!--Plan overwiev label-->
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label
+                    Margin="5"
+                    Text="My weight loss plan"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="Green"
+                    HorizontalOptions="Center" />
+                <HorizontalStackLayout VerticalOptions="Center">
+                    
+                <Label
+                    Margin="5"
+                    Text="By AI coach"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+                    <Border
+                      Stroke="Purple"
+                      StrokeThickness="0"
+                      BackgroundColor="Red"
+                      Padding="5"
+                      Margin="1">
+                        <Label
+                         Margin="5"
+                         Text="🚶‍♂️‍➡️ Maverick"
+                         FontSize="18"
+                         TextColor="White"
+                         HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="24"/>
+                        </Border.StrokeShape>
+                    </Border>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <!--Plan overwiev label-->
         <Border
          Stroke="#F5F5F5"
          StrokeThickness="1"
