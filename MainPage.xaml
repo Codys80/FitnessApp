@@ -8,6 +8,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            <Image Source="progress_bar.png" Aspect="Fill" HorizontalOptions="CenterAndExpand" />
             <Label 
                 Text="Chose your coach"
                 FontSize="32"
